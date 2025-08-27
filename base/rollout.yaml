@@ -23,7 +23,7 @@ spec:
         tier: front
     spec:
       containers:
-      - image: quay.io/thiha0000/python-app:v3
+      - image: quay.io/thiha0000/python-app:v4
         name: web
         imagePullPolicy: Always
         resources: 
