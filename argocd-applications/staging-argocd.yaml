@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prod-app
+  name: staging-app
   namespace: argocd
 spec:
   destination:
-    namespace: prod
+    namespace: staging
     server: https://kubernetes.default.svc
   project: webapp
   source:
-    path: canary-strategy/prod
+    path: staging
     repoURL: https://github.com/thiha1010/argo-labs.git
-    targetRevision: release
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
