@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: webapp
   source:
-    path: canary-strategy/prod
+    path: prod
     repoURL: https://github.com/thiha1010/argo-labs.git
     targetRevision: release
   syncPolicy:
